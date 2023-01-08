@@ -1,8 +1,9 @@
 <strong>Unofficial library for working with Ankr Advanced APIs</strong>
 
-Official documentation: <a href="https://www.ankr.com/docs/advanced-api/overview/" target="_blank"/>
+This is just a brief description of the methods. For a more detailed description, visit the official website:<br>
+<strong>https://www.ankr.com/docs/advanced-api/overview/</strong>
 
-Code Example:
+<h2>Code Example:</h2>
 
 <h3>NFTs API</h3>
 
