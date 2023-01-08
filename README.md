@@ -20,18 +20,8 @@ Code Example:
       Blockchain.BSC
     };
     
-    var result = await ankr.GetNFTsByOwnerAsync(blockchaines, walletAddress)
-  </li>
-  
-  <li>
-    <h5>Only one chain Get NFTs Balance</5>
-    using AnkrRPC;
-    
-    Ankr ankr = new Ankr();
-    
-    string walletAddress = "0xf573d99385C05c23B24ed33De616ad16a43a0919";
-    
-    var result = await ankr.GetNFTsByOwnerAsync(Blockchain.ETH, walletAddress)
+    var multiChainRequest = await ankr.GetNFTsByOwnerAsync(blockchaines, walletAddress)
+    var oneChainRequest = await ankr.GetNFTsByOwnerAsync(Blockchain.ETH, walletAddress)
   </li>
   
   <li>
@@ -55,7 +45,7 @@ Code Example:
     
     var blockchain = Blockchain.ETH;
     string contractAddress = "0x8d01c8ee82e581e55c02117a676b5bbd4734fabb";
-    int pageSize = 10; <strong><= Not a requered parameter. The default setting is 50</strong>
+    int pageSize = 10; __<= Not a requered parameter. The default setting is 50(bold)__
     string tokenId = "23240";
     
     var result = await ankr.GetNFTHoldersAsync(blockchain, contractAddress, tokenId )
