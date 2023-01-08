@@ -55,7 +55,7 @@ Code Example:
     
     var blockchain = Blockchain.ETH;
     string contractAddress = "0x8d01c8ee82e581e55c02117a676b5bbd4734fabb";
-    int pageSize = 10; <bold><= Not a requered parameter. The default setting is 50</bold>
+    int pageSize = 10; <strong><= Not a requered parameter. The default setting is 50</strong>
     string tokenId = "23240";
     
     var result = await ankr.GetNFTHoldersAsync(blockchain, contractAddress, tokenId )
