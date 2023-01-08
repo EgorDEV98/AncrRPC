@@ -8,7 +8,9 @@ Code Example:
 
 <ol>
   <li>
-    <h4>MultiChain Get NFTs Balance<br>Description: Retrieves a list of NFTs (ERC721/ERC1155/ENS/POAP) that belong to the particular account specified.<h4/>
+    <h5>
+      MultiChain Get NFTs Balance<br>Description: Retrieves a list of NFTs (ERC721/ERC1155/ENS/POAP) that belong to the particular account specified.
+      <h5/>
     
     using AnkrRPC;
       
@@ -27,8 +29,11 @@ Code Example:
   </li>
   
   <li>
-    <h4>Get NFT Metadata</h4>
-    <h6>Description: Retrieves the metadata that belongs to a particular NFT (ERC721/ERC1155/ENS/POAP).<h6/>
+    <h5>
+      Get NFT Metadata<br>Description: Retrieves the metadata that belongs to a particular NFT (ERC721/ERC1155/ENS/POAP).
+    </h5>
+
+    
     using AnkrRPC;
     
     Ankr ankr = new Ankr();
@@ -41,8 +46,10 @@ Code Example:
   </li>
   
   <li>
-    <h4>Get NFT Holders</h4>
-    <h6>Description: Retrieves a list of holders (wallet addresses) of the NFT specified by request body parameters.<h6/>
+    <h5>Get NFT Holders<br>
+      Description: Retrieves a list of holders (wallet addresses) of the NFT specified by request body parameters.
+    </h5>
+
     using AnkrRPC;
     
     Ankr ankr = new Ankr();
