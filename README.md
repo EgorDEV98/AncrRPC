@@ -8,9 +8,9 @@ Code Example:
 
 <ol>
   <li>
-    <h4>MultiChain Get NFTs Balance<br>Description: Retrieves a list of NFTs (ERC721/ERC1155/ENS/POAP) that belong to the particular account specified.</h4>
-    using AnkrRPC;
+    <h4>MultiChain Get NFTs Balance<br>Description: Retrieves a list of NFTs (ERC721/ERC1155/ENS/POAP) that belong to the particular account specified.<h4/>
     
+    using AnkrRPC;
     Ankr ankr = new Ankr();
     
     string walletAddress = "0xf573d99385C05c23B24ed33De616ad16a43a0919";
