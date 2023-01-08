@@ -8,7 +8,8 @@ Code Example:
 
 <ol>
   <li>
-    <h5>MultiChain Get NFTs Balance</5>
+    <h4>MultiChain Get NFTs Balance</h4>
+    <h6>Description: Retrieves a list of NFTs (ERC721/ERC1155/ENS/POAP) that belong to the particular account specified.<h6/>
     using AnkrRPC;
     
     Ankr ankr = new Ankr();
@@ -26,7 +27,8 @@ Code Example:
   </li>
   
   <li>
-    <h5>Get NFT Metadata</5>
+    <h4>Get NFT Metadata</h4>
+    <h6>Description: Retrieves the metadata that belongs to a particular NFT (ERC721/ERC1155/ENS/POAP).<h6/>
     using AnkrRPC;
     
     Ankr ankr = new Ankr();
@@ -39,7 +41,26 @@ Code Example:
   </li>
   
   <li>
-    <h5>Get NFT Holders</5>
+    <h4>Get NFT Holders</h4>
+    <h6>Description: Retrieves a list of holders (wallet addresses) of the NFT specified by request body parameters.<h6/>
+    using AnkrRPC;
+    
+    Ankr ankr = new Ankr();
+    
+    var blockchain = Blockchain.ETH;
+    string contractAddress = "0x8d01c8ee82e581e55c02117a676b5bbd4734fabb";
+    int pageSize = 10; // Not a requered parameter. The default setting is 50
+    string nextPageToken = null; // Not a requered parameter.
+    
+    var result = await ankr.GetNFTHoldersAsync(blockchain, contractAddress, tokenId )
+  </li>
+</ol>
+
+<h3>Query API</h3>
+
+<ol>
+  <li>
+    <h4>Get Blocks</h4>
     using AnkrRPC;
     
     Ankr ankr = new Ankr();
