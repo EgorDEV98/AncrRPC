@@ -206,7 +206,7 @@ namespace AncrRPC
             }
         }
 
-        public async Task<IResponse> GetTokenHoldersAsync(Blockchain blockchain,string contractAddress, int pageSize, string nextPageToken = null)
+        public async Task<IResponse> GetTokenHoldersAsync(Blockchain blockchain,string contractAddress, int pageSize = 500, string nextPageToken = null)
         {
             try
             {
