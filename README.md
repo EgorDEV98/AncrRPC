@@ -4,15 +4,38 @@ Official documentation: <a href="https://www.ankr.com/docs/advanced-api/overview
 
 Code Example:
 
-using AnkrRPC;
-
-NFTs API
+<h3>NFTs API</h3>
 
 <ol>
   <li>
     <h5>MultiChain Get NFTs Balance</5>
+    using AnkrRPC;
     
     Ankr ankr = new Ankr();
-    var result = await ankr.GetNFTsByOwnerAsync(IEnumerable<Blockchain> blockchains,string walletAddress, string nextPageToken = null)
+    
+    string walletAddress = "0xf573d99385C05c23B24ed33De616ad16a43a0919";
+    var blockchaines = new[]
+    {
+      Blockchain.ETH,
+      Blockchain.BSC
+    };
+    
+    var result = await ankr.GetNFTsByOwnerAsync(blockchaines, walletAddress)
+  </li>
+  
+  <li>
+    <h5>MultiChain Get NFTs Balance</5>
+    using AnkrRPC;
+    
+    Ankr ankr = new Ankr();
+    
+    string walletAddress = "0xf573d99385C05c23B24ed33De616ad16a43a0919";
+    var blockchaines = new[]
+    {
+      Blockchain.ETH,
+      Blockchain.BSC
+    };
+    
+    var result = await ankr.GetNFTsByOwnerAsync(blockchaines, walletAddress)
   </li>
 </ol>
