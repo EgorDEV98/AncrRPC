@@ -19,6 +19,7 @@ Code Example:
       Blockchain.ETH,
       Blockchain.BSC
     };
+    string nextPageToken;  // Not a requered parameter.
     
     var multiChainRequest = await ankr.GetNFTsByOwnerAsync(blockchaines, walletAddress)
     var oneChainRequest = await ankr.GetNFTsByOwnerAsync(Blockchain.ETH, walletAddress)
@@ -45,8 +46,8 @@ Code Example:
     
     var blockchain = Blockchain.ETH;
     string contractAddress = "0x8d01c8ee82e581e55c02117a676b5bbd4734fabb";
-    int pageSize = 10; `<= Not a requered parameter. The default setting is 50`
-    string tokenId = "23240";
+    int pageSize = 10; // Not a requered parameter. The default setting is 50
+    string nextPageToken = null; // Not a requered parameter.
     
     var result = await ankr.GetNFTHoldersAsync(blockchain, contractAddress, tokenId )
   </li>
